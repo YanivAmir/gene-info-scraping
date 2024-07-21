@@ -1,6 +1,6 @@
 # Double Gene Citations as Randomizing Factor When Constructing Genetic Bayesian Networks
 
-This is a script I wrote during my internship in early 2021
+This is a script I wrote during my internship in early 2021 after completing my ML studies.
 
 The Goal: The number of times a gene pair is found to be associated together in the same research paper's abstract
 is used as a factor when randomally picking gene pairs as priors to train a genetic Bayesian Network.  
