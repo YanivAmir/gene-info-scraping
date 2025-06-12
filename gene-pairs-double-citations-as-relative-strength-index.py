@@ -37,9 +37,9 @@ def createSingleCitation(genes,organ):
     "returns a df of genes and their respective number of abstract citations and saves .csv"
     
     # driver = webdriver.Chrome(ChromeDriverManager().install()) 
-    single_citations = pd.DataFrame(index=genelist, columns = ['Genes','citations #'])
+    single_citations = pd.DataFrame(index=genes, columns = ['Genes','citations #'])
     driver = webdriver.Chrome(ChromeDriverManager().install())
-    for i,gene in enumerate(genelist):
+    for i,gene in enumerate(genes):
         driver.get('https://pubmed.ncbi.nlm.nih.gov/?term='+gene+'%5BText+Word%5D&sort=')
     # driver.get("https://pubmed.ncbi.nlm.nih.gov/?term="+gene)
         try:
