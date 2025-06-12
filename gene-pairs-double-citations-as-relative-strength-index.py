@@ -36,7 +36,7 @@ def createSingleCitation(genes,organ):
     "finds the number of abstracts in pubmed that specify the gene in their abstract"
     "returns a df of genes and their respective number of abstract citations and saves .csv"
     
-    driver = webdriver.Chrome(ChromeDriverManager().install()) 
+    # driver = webdriver.Chrome(ChromeDriverManager().install()) 
     single_citations = pd.DataFrame(index=genelist, columns = ['Genes','citations #'])
     driver = webdriver.Chrome(ChromeDriverManager().install())
     for i,gene in enumerate(genelist):
